@@ -1,0 +1,170 @@
+/* General body and container styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+}
+/* Hero Section */
+.hero-section {
+    background: #2e3d58;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    
+}
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #d3d3d3;
+}
+
+/* Hero Image Container */
+.hero-section .hero-image-container {
+    position: relative;
+    margin-top: -40px;  /* Move the image container upwards */
+    display: flex;
+    justify-content: center;
+}
+
+/* Hero Image Styling */
+.hero-section .hero-image {
+    width: 80%;          /* Adjust image width */
+    max-width: 350px;    /* Ensure image doesn't become too large */
+    border-radius: 60%;  /* Make the image circular */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Soft shadow around the image */
+    margin-bottom: 0px;
+    transition: transform 0.3s ease;  /* Add some space above the image */
+    object-fit: cover;   /* Ensure the image covers the circle properly */
+}
+/* Button styles */
+.btn-primary, .btn-secondary {
+    font-size: 1rem;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin: 10px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+.btn-secondary {
+    background-color: #28a745;
+    border: none;
+}
+ /* General Section Styling (applies to all sections) */
+ section {
+    padding: 60px 0;
+}
+/* About Section Styling */
+.about-section p {
+    font-size: 1.1rem;
+    color: #333;
+}
+/* Skills and Contact Section BG color */
+.skills-section, .contact-section {
+    background-color: #f7f5f1;
+
+}
+
+
+
+/* Skills, Projects, and Contact Section Headers */
+.skills-section h2, .projects-section h2, .contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+ /* Skills Section Styling */
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;  /* Dark text for contrast */
+}
+
+/* Skill Cards */
+.skill-card {
+    background-color: white;  /* White background for cards */
+    padding: 20px;  /* Padding inside the cards */
+    border-radius: 8px;  /* Rounded corners for the card */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+    margin-bottom: 30px;  /* Space between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
+}
+
+.skill-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.skill-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-card li {
+    margin-bottom: 10px;
+}
+
+/* Hover Effect for Skill Cards */
+.skill-card:hover {
+    transform: translateY(-10px);  /* Slightly lift the card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+}
+    
+ /* Project Card Styling */
+ .project-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+
+ /* Footer Styling */
+ .footer {
+    background-color: #2e3d58;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design for Smaller Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-section .hero-image-container {
+        margin-top: 30px;  /* Move the image container upwards */
+        
+    }
+    .hero-section .hero-image {
+        width: 60%;
+        max-width: 250px;
+    }
+    .skills-section .col-md-4 {
+        margin-bottom: 20px;
+    }
+    .project-card {
+        margin-bottom: 20px;
+    }
+}
